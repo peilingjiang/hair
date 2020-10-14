@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+
+import SetColor from './components/setColor/setColor'
+import MySketch from './components/mySketch/mySketch'
+
+import './App.css'
+
+const debug = false
 
 function App() {
+  const [colorState, setColorState] = useState(debug ? '#00d1ff' : null)
+
+  const handleSetColor = color => {
+    setColorState(color)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {colorState === null ? (
+        <SetColor handleSetColor={handleSetColor} />
+      ) : (
+        <MySketch color={colorState} />
+      )}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

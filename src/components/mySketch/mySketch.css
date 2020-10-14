@@ -1,0 +1,21 @@
+#mainCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.social-svg {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  max-width: 1440px;
+}
