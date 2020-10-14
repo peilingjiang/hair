@@ -396,6 +396,7 @@ export default class MySketch extends Component {
             <p>{'10. Hair, Hair loss, Human hair growth - Wikipedia'}</p>
           </div>
         </div>
+        <p style={{ display: 'none' }} id="p5_loading"></p>
       </>
     )
   }
