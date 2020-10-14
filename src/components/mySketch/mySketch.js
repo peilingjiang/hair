@@ -226,6 +226,22 @@ export default class MySketch extends Component {
             they're just falling...
           </h1>
           <p id="scene1Narration" className="mainNarration scene1Narration"></p>
+
+          <div id="info" className="hide">
+            <p className="author">
+              Peiling Jiang / NYU Interactive Media Arts / Information Design
+            </p>
+            <p className="year">
+              <a
+                href="https://github.com/peilingjiang/hair"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>{' '}
+              - 2020
+            </p>
+          </div>
         </div>
 
         {/* Scene 2 */}
@@ -624,6 +640,7 @@ function handleSceneChange(s, pS, response) {
     entering = false
 
     document.getElementById('introTitle').classList.remove('no-display')
+    document.getElementById('info').classList.remove('hide')
     breakChange() // Scene1 narrative
 
     if (!engineRunning) {

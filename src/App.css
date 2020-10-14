@@ -70,6 +70,34 @@ body {
   height: 100vh; */
 }
 
+#info {
+  opacity: 0.99;
+  transition: opacity 1s;
+}
+
+.author {
+  position: absolute;
+  top: 3rem;
+  left: 10%;
+  text-align: left;
+  color: #999;
+  font-weight: 300;
+}
+
+.year {
+  position: absolute;
+  top: 3rem;
+  right: 10%;
+  text-align: right;
+  color: #999;
+  font-weight: 300;
+}
+
+.year a {
+  color: #666;
+  text-decoration: none;
+}
+
 /* --------------------------------- scene 1 -------------------------------- */
 
 .scene1 {
