@@ -305,16 +305,25 @@ body {
   color: #666;
 }
 
-.references {
+.thx {
+  margin: 5rem auto 0;
+}
+
+.references,
+.thx {
   text-align: left;
   width: 50%;
   min-width: 480px;
   max-width: 1440px;
-  margin: 5rem auto 0;
+}
+
+.references {
+  margin: 2rem auto 0;
 }
 
 .references p,
-.references h2 {
+.references h2,
+.thx {
   color: #999;
 }
 
@@ -322,7 +331,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.references p {
+.references p,
+.thx {
   font-size: 0.8rem;
   line-height: 1.2rem;
 }

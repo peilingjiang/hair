@@ -346,6 +346,13 @@ export default class MySketch extends Component {
         <div className="scene scene7 sceneMarker marker7">
           <p className="thanks">thanks for reading</p>
 
+          <p className="thx">
+            ... this project won't happen without open-source libraries
+            including p5.js, matter.js, p5bezier, scrollama, tinycolor, and
+            openpeeps (illustration). Many thanks to Katherine Dillon, Youjin
+            Shin, and Schuyler DeVos.
+          </p>
+
           <div className="references">
             <h2>references</h2>
             <p>
